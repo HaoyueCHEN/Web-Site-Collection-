@@ -10,13 +10,16 @@ Because of the limition of the size of the uploadfile, I do not upload the node-
 
 ## Installation
 cd simple-todos
+
 meteor npm install
+
 meteor
 
-### Remember run 
+### Remember run to make sure that we could use facebook account to log in
 	
 meteor add accounts-facebook
+
 meteor add service-configuration
 
-### to make sure that we could use facebook account to log in
+
 
