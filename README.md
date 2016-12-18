@@ -15,7 +15,7 @@ meteor npm install
 
 meteor
 
-### Remember run to make sure that we could use facebook account to log in
+### Remember run this command to make sure that we could use facebook account to log in
 	
 meteor add accounts-facebook
 
