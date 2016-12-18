@@ -1,0 +1,60 @@
+
+
+<header>
+  <h1>Web Site Collection</h1>
+ 
+ 
+
+  <login-buttons></login-buttons><br>
+<div id="form-container" ng-show="$ctrl.currentUser">
+  <form class="new-task"ng-submit="$ctrl.addTask($ctrl.newTask)" >
+<p class='formtitle'>Title:</p><br>
+
+    <input ng-model="$ctrl.newTask.title" type="text" name="text" placeholder="Type to add new title"/><br>
+<p class='formtitle'>Description:</p><br>
+    <textarea ng-model="$ctrl.newTask.description" rows="5">Describe this site </textarea> <br>
+<p class='formtitle'>Url:</p><br>
+<input ng-model="$ctrl.newTask.url" type="text" name="url" placeholder="Type an url to create the link"/><br>
+<p class='formtitle'>Thumbnail:</p><br>    
+<input ng-model="$ctrl.newTask.thumbnail" type="text" name="thumbnail" placeholder="Type an url to add new thumbnail"/><br>
+    
+
+	<input class='formtitle' type="submit" ngClick="Submit">
+  </form>
+
+  </div>
+
+</header>
+
+
+
+<ul>
+
+  <li ng-repeat="task in $ctrl.tasks" class="col-md-12">
+
+<div class="thumbnail">
+    
+    <button class="delete" ng-click="$ctrl.removeTask(task)">&times;</button>
+
+      <span class="title">
+
+      {{task.title | uppercase}}
+
+    </span><br>
+
+    <span class="description">
+
+      {{task.description}}
+
+    </span><br>
+<div>
+<image ng-src="{{task.thumbnail}}"/>
+</div>
+
+<a class="go" ng-href="{{task.url}}">Go</a>
+</div>
+  </li>
+
+</ul>
+
+

@@ -1,0 +1,23 @@
+{
+  "name": "simple-todos",
+  "private": true,
+  "scripts": {
+    "start": "meteor run"
+  },
+  "dependencies": {
+    "angular": "^1.6.0",
+    "angular-meteor": "^1.3.11",
+    "babel-runtime": "6.18.0",
+    "meteor-node-stubs": "~0.2.0"
+  },
+
+    "contentful": {
+        "accessToken": "<your_access_token>",
+        "space": "<your_space_id>",
+        "host": "cdn.contentful.com",
+        "callbackToken": "<your_callback_token>",
+        "callbackPort": 1234,
+        "limit": 50
+    }
+
+}
